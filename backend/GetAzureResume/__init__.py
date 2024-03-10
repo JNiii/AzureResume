@@ -14,7 +14,7 @@ container = database.get_container_client("Counter")
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
-    item = container.read_item(item="1", partition_key="1")
+    item = container.read_item(item="count_id", partition_key="count_id")
     item['count'] += 1
     new_item = container.replace_item(item=item, body=item)
     return func.HttpResponse(
