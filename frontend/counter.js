@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) =>{
 })
 
 const localfunctionApi = 'http://localhost:7071/api/GetAzureResume';
-const azurefunctionApi = 'https://fa-getazureresume.azurewebsites.net/api/GetAzureResume';
+const azurefunctionApi = 'https://fa-getazureresume.azurewebsites.net/api/GetAzureResume?';
 
 const getVisitCount = () => {
     let count = 1;
